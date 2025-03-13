@@ -17,7 +17,7 @@ const Login = () => {
             className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground mb-8"
           >
             <ArrowLeft size={16} className="mr-2" />
-            Back to Home
+            Quay lại Trang chủ
           </Link>
           
           <FadeIn>

@@ -12,69 +12,69 @@ import Container from '../components/ui/Container';
 const equipmentData: EquipmentType[] = [
   {
     id: 1,
-    name: 'Oscilloscope',
-    category: 'Measurement',
+    name: 'Máy hiện sóng',
+    category: 'Thiết bị đo lường',
     image: '/placeholder.svg',
     imageUrl: '/placeholder.svg',
-    location: 'Lab 101',
+    location: 'Phòng 101',
     status: 'available',
     condition: 'good',
-    description: 'Digital storage oscilloscope with 100MHz bandwidth and 1GSa/s sample rate.'
+    description: 'Máy hiện sóng kỹ thuật số với băng thông 100MHz và tốc độ lấy mẫu 1GSa/s.'
   },
   {
     id: 2,
-    name: 'Digital Multimeter',
-    category: 'Measurement',
+    name: 'Đồng hồ vạn năng',
+    category: 'Thiết bị đo lường',
     image: '/placeholder.svg',
     imageUrl: '/placeholder.svg',
-    location: 'Lab 102',
+    location: 'Phòng 102',
     status: 'in-use',
     condition: 'excellent',
-    description: 'Precision multimeter for voltage, current, resistance, capacitance, and temperature measurement.'
+    description: 'Đồng hồ vạn năng chính xác để đo điện áp, dòng điện, điện trở, điện dung và nhiệt độ.'
   },
   {
     id: 3,
-    name: 'Function Generator',
-    category: 'Signal',
+    name: 'Máy phát tín hiệu',
+    category: 'Tín hiệu',
     image: '/placeholder.svg',
     imageUrl: '/placeholder.svg',
-    location: 'Lab 103',
+    location: 'Phòng 103',
     status: 'maintenance',
     condition: 'fair',
-    description: 'Generates various waveforms with adjustable frequency and amplitude.'
+    description: 'Thiết bị tạo ra các dạng sóng khác nhau với tần số và biên độ có thể điều chỉnh.'
   },
   {
     id: 4,
-    name: 'DC Power Supply',
-    category: 'Power',
+    name: 'Nguồn DC',
+    category: 'Nguồn điện',
     image: '/placeholder.svg',
     imageUrl: '/placeholder.svg',
-    location: 'Lab 101',
+    location: 'Phòng 101',
     status: 'available',
     condition: 'good',
-    description: 'Regulated DC power supply with adjustable voltage and current limits.'
+    description: 'Nguồn DC ổn định với điện áp và giới hạn dòng điện có thể điều chỉnh.'
   },
   {
     id: 5,
-    name: 'Logic Analyzer',
-    category: 'Digital',
+    name: 'Máy phân tích logic',
+    category: 'Kỹ thuật số',
     image: '/placeholder.svg',
     imageUrl: '/placeholder.svg',
-    location: 'Lab 104',
+    location: 'Phòng 104',
     status: 'available',
     condition: 'excellent',
-    description: '16-channel logic analyzer for digital circuit debugging and analysis.'
+    description: 'Máy phân tích logic 16 kênh để gỡ lỗi và phân tích mạch kỹ thuật số.'
   },
   {
     id: 6,
-    name: 'Soldering Station',
-    category: 'Tools',
+    name: 'Trạm hàn',
+    category: 'Công cụ',
     image: '/placeholder.svg',
     imageUrl: '/placeholder.svg',
-    location: 'Lab 105',
+    location: 'Phòng 105',
     status: 'in-use',
     condition: 'good',
-    description: 'Temperature-controlled soldering station with digital display and various tips.'
+    description: 'Trạm hàn có kiểm soát nhiệt độ với màn hình hiển thị kỹ thuật số và nhiều đầu hàn khác nhau.'
   },
 ];
 
@@ -93,13 +93,13 @@ const Equipment = () => {
             className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground"
           >
             <ArrowLeft size={16} className="mr-2" />
-            Back to Dashboard
+            Quay lại Bảng điều khiển
           </Link>
           
           <FadeIn>
-            <h1 className="text-3xl font-bold mt-4 mb-2">Lab Equipment</h1>
+            <h1 className="text-3xl font-bold mt-4 mb-2">Thiết Bị Phòng Thí Nghiệm</h1>
             <p className="text-muted-foreground">
-              Browse and request equipment for your lab projects
+              Duyệt và yêu cầu thiết bị cho các dự án phòng thí nghiệm của bạn
             </p>
           </FadeIn>
         </div>

@@ -45,9 +45,9 @@ const Navbar = () => {
   };
 
   const navLinks = [
-    { name: 'Home', href: '/' },
-    { name: 'Equipment', href: '/equipment' },
-    { name: 'Dashboard', href: '/dashboard' },
+    { name: 'Trang chủ', href: '/' },
+    { name: 'Thiết bị', href: '/equipment' },
+    { name: 'Bảng điều khiển', href: '/dashboard' },
   ];
 
   return (
@@ -82,17 +82,17 @@ const Navbar = () => {
             <button
               onClick={toggleDarkMode}
               className="p-2 rounded-full hover:bg-secondary transition-colors"
-              aria-label="Toggle dark mode"
+              aria-label="Chuyển đổi chế độ tối"
             >
               {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
             </button>
             
             <div className="hidden md:flex items-center space-x-2">
               <Link to="/login" className="btn-secondary">
-                Log in
+                Đăng nhập
               </Link>
               <Link to="/register" className="btn-primary">
-                Register
+                Đăng ký
               </Link>
             </div>
             
@@ -100,7 +100,7 @@ const Navbar = () => {
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 className="p-2 rounded-lg text-foreground hover:bg-secondary transition-colors"
-                aria-label="Open menu"
+                aria-label="Mở menu"
               >
                 {isOpen ? <X size={24} /> : <Menu size={24} />}
               </button>
@@ -133,14 +133,14 @@ const Navbar = () => {
                 className="block w-full text-center px-4 py-3 rounded-lg border border-border hover:bg-secondary/50 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Log in
+                Đăng nhập
               </Link>
               <Link
                 to="/register"
                 className="block w-full text-center px-4 py-3 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Register
+                Đăng ký
               </Link>
             </div>
           </div>

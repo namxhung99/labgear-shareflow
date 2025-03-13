@@ -19,8 +19,8 @@ const LoginForm = () => {
     // Basic validation
     if (!phoneNumber || !password) {
       toast({
-        title: "Error",
-        description: "Please fill in all fields",
+        title: "Lỗi",
+        description: "Vui lòng điền đầy đủ thông tin",
         variant: "destructive",
       });
       return;
@@ -32,8 +32,8 @@ const LoginForm = () => {
     setTimeout(() => {
       setIsLoading(false);
       toast({
-        title: "Success",
-        description: "You have successfully logged in",
+        title: "Thành công",
+        description: "Bạn đã đăng nhập thành công",
       });
       navigate('/dashboard');
     }, 1500);
@@ -48,21 +48,21 @@ const LoginForm = () => {
   return (
     <div className="glass-panel p-8 w-full max-w-md mx-auto">
       <div className="space-y-2 text-center mb-8">
-        <h1 className="text-2xl font-bold">Welcome Back</h1>
-        <p className="text-muted-foreground">Sign in to your account to continue</p>
+        <h1 className="text-2xl font-bold">Chào mừng trở lại</h1>
+        <p className="text-muted-foreground">Đăng nhập vào tài khoản để tiếp tục</p>
       </div>
       
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="space-y-2">
           <label htmlFor="phoneNumber" className="text-sm font-medium">
-            Phone Number
+            Số điện thoại
           </label>
           <input
             id="phoneNumber"
             type="tel"
             value={phoneNumber}
             onChange={handlePhoneNumberChange}
-            placeholder="Enter your phone number"
+            placeholder="Nhập số điện thoại của bạn"
             className="input-field"
             disabled={isLoading}
             required
@@ -72,10 +72,10 @@ const LoginForm = () => {
         <div className="space-y-2">
           <div className="flex items-center justify-between">
             <label htmlFor="password" className="text-sm font-medium">
-              Password
+              Mật khẩu
             </label>
             <Link to="/forgot-password" className="text-sm text-primary hover:underline">
-              Forgot password?
+              Quên mật khẩu?
             </Link>
           </div>
           <div className="relative">
@@ -84,7 +84,7 @@ const LoginForm = () => {
               type={showPassword ? "text" : "password"}
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              placeholder="Enter your password"
+              placeholder="Nhập mật khẩu của bạn"
               className="input-field pr-10"
               disabled={isLoading}
               required
@@ -94,7 +94,7 @@ const LoginForm = () => {
               className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground"
               onClick={() => setShowPassword(!showPassword)}
               tabIndex={-1}
-              aria-label={showPassword ? "Hide password" : "Show password"}
+              aria-label={showPassword ? "Ẩn mật khẩu" : "Hiện mật khẩu"}
             >
               {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
             </button>
@@ -111,7 +111,7 @@ const LoginForm = () => {
             disabled={isLoading}
           />
           <label htmlFor="rememberMe" className="ml-2 block text-sm text-muted-foreground">
-            Remember me
+            Ghi nhớ đăng nhập
           </label>
         </div>
         
@@ -123,11 +123,11 @@ const LoginForm = () => {
           {isLoading ? (
             <>
               <Loader2 size={18} className="animate-spin" />
-              Signing in...
+              Đang đăng nhập...
             </>
           ) : (
             <>
-              Sign in
+              Đăng nhập
               <ArrowRight size={18} />
             </>
           )}
@@ -136,9 +136,9 @@ const LoginForm = () => {
       
       <div className="mt-8 text-center">
         <p className="text-sm text-muted-foreground">
-          Don't have an account?{' '}
+          Chưa có tài khoản?{' '}
           <Link to="/register" className="text-primary hover:underline">
-            Create an account
+            Tạo tài khoản mới
           </Link>
         </p>
       </div>

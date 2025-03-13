@@ -2,16 +2,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Clock, CheckCircle, AlertTriangle, Info } from 'lucide-react';
-
-export interface Equipment {
-  id: string;
-  name: string;
-  category: string;
-  status: 'available' | 'in-use' | 'maintenance';
-  imageUrl: string;
-  description: string;
-  location: string;
-}
+import type { Equipment } from '../../types/equipment';
 
 interface EquipmentCardProps {
   equipment: Equipment;
@@ -54,7 +45,7 @@ const EquipmentCard: React.FC<EquipmentCardProps> = ({ equipment }) => {
     >
       <div className="relative overflow-hidden aspect-video bg-secondary">
         <img
-          src={equipment.imageUrl || '/placeholder.svg'}
+          src={equipment.imageUrl || equipment.image}
           alt={equipment.name}
           className="object-cover w-full h-full transition-transform duration-500"
           style={{
@@ -64,8 +55,8 @@ const EquipmentCard: React.FC<EquipmentCardProps> = ({ equipment }) => {
         <div className="absolute top-3 left-3">
           <span className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-medium ${getStatusColor(equipment.status)}`}>
             {getStatusIcon(equipment.status)}
-            {equipment.status === 'available' ? 'Available' : 
-             equipment.status === 'in-use' ? 'In Use' : 'Maintenance'}
+            {equipment.status === 'available' ? 'Sẵn sàng' : 
+             equipment.status === 'in-use' ? 'Đang sử dụng' : 'Bảo trì'}
           </span>
         </div>
       </div>
@@ -91,7 +82,7 @@ const EquipmentCard: React.FC<EquipmentCardProps> = ({ equipment }) => {
             to={`/equipment/${equipment.id}`}
             className="text-sm font-medium text-primary hover:underline"
           >
-            View Details
+            Xem chi tiết
           </Link>
         </div>
       </div>
