@@ -15,6 +15,8 @@ const equipmentData: EquipmentType[] = [
     name: 'Oscilloscope',
     category: 'Measurement',
     image: '/placeholder.svg',
+    imageUrl: '/placeholder.svg',
+    location: 'Lab 101',
     status: 'available',
     condition: 'good',
     description: 'Digital storage oscilloscope with 100MHz bandwidth and 1GSa/s sample rate.'
@@ -24,6 +26,8 @@ const equipmentData: EquipmentType[] = [
     name: 'Digital Multimeter',
     category: 'Measurement',
     image: '/placeholder.svg',
+    imageUrl: '/placeholder.svg',
+    location: 'Lab 102',
     status: 'in-use',
     condition: 'excellent',
     description: 'Precision multimeter for voltage, current, resistance, capacitance, and temperature measurement.'
@@ -33,6 +37,8 @@ const equipmentData: EquipmentType[] = [
     name: 'Function Generator',
     category: 'Signal',
     image: '/placeholder.svg',
+    imageUrl: '/placeholder.svg',
+    location: 'Lab 103',
     status: 'maintenance',
     condition: 'fair',
     description: 'Generates various waveforms with adjustable frequency and amplitude.'
@@ -42,6 +48,8 @@ const equipmentData: EquipmentType[] = [
     name: 'DC Power Supply',
     category: 'Power',
     image: '/placeholder.svg',
+    imageUrl: '/placeholder.svg',
+    location: 'Lab 101',
     status: 'available',
     condition: 'good',
     description: 'Regulated DC power supply with adjustable voltage and current limits.'
@@ -51,6 +59,8 @@ const equipmentData: EquipmentType[] = [
     name: 'Logic Analyzer',
     category: 'Digital',
     image: '/placeholder.svg',
+    imageUrl: '/placeholder.svg',
+    location: 'Lab 104',
     status: 'available',
     condition: 'excellent',
     description: '16-channel logic analyzer for digital circuit debugging and analysis.'
@@ -60,6 +70,8 @@ const equipmentData: EquipmentType[] = [
     name: 'Soldering Station',
     category: 'Tools',
     image: '/placeholder.svg',
+    imageUrl: '/placeholder.svg',
+    location: 'Lab 105',
     status: 'in-use',
     condition: 'good',
     description: 'Temperature-controlled soldering station with digital display and various tips.'

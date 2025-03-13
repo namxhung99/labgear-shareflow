@@ -20,8 +20,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ["Inter var", "sans-serif"],
-        display: ["SF Pro Display", "Inter var", "sans-serif"]
+        sans: ["Roboto", "sans-serif"],
+        display: ["Roboto", "sans-serif"]
       },
       colors: {
         border: "hsl(var(--border))",
@@ -30,7 +30,7 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
+          DEFAULT: "#5B67CA",
           foreground: "hsl(var(--primary-foreground))"
         },
         secondary: {
