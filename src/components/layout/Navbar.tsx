@@ -59,8 +59,9 @@ const Navbar = () => {
       <div className="layout-container">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <Link to="/" className="flex items-center">
+            <Link to="/" className="flex flex-col items-start">
               <span className="text-xl font-display font-bold tracking-tight">LabGear</span>
+              <span className="text-xs text-muted-foreground -mt-1">Trang quản lý thiết bị</span>
             </Link>
           </div>
           
