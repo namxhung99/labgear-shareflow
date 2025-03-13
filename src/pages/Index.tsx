@@ -145,18 +145,18 @@ const Index = () => {
               {
                 step: '01',
                 title: 'Create an Account',
-                description: 'Sign up with your phone number and verify your identity to create an account.',
+                description: 'Sign up with your phone number and verify your identity to create an account.'
               },
               {
                 step: '02',
                 title: 'Browse Equipment',
-                description: 'Explore available lab equipment and check their status and specifications.',
+                description: 'Explore available lab equipment and check their status and specifications.'
               },
               {
                 step: '03',
                 title: 'Request & Return',
-                description: 'Submit borrowing requests and return equipment when you're done.',
-              },
+                description: 'Submit borrowing requests and return equipment when you\'re done.'
+              }
             ].map((item, index) => (
               <FadeIn key={index} delay={index * 100} className="h-full">
                 <div className="glass-panel p-8 h-full relative overflow-hidden">
